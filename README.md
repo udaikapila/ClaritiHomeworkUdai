@@ -1,7 +1,7 @@
 
 # Udai Kapila - Clariti Interview Assignment
 
-**This project contains the custom code for Field Change History functionality. This functionality will allow the user to track field changes, compare old values to new values and to filter on the change history by Object, Field Name and Change Date. The functionality has 3 main components: An invocable apex class that will create a new Field_Change_History__c record, a flow to trigger history tracking, and a LWC to display and filter history records.**
+**This project contains the custom code for Field Change History functionality. This functionality will allow the user to track field changes, compare old values to new values and to filter on the change history by Object, Field Name and Change Date. The functionality has 4 main components: Metadata to configure which object and fields to track, an invocable apex class that will create a new Field_Change_History__c record, a flow to trigger history tracking, and a LWC to display and filter history records.**
 &nbsp;   
 &nbsp;
 
