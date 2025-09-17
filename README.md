@@ -1,7 +1,7 @@
 
 # Udai Kapila - Clariti Interview Assignment
 
-**This project contains the custom code for Field Change History functionality. This functionality will allow the user to track field changes, compare old values to new values and to filter on the change history by Object, Field Name and Change Date. The functionality has 4 main components: Metadata to configure which object and fields to track, an invocable apex class that will create a new Field_Change_History__c record, a flow to trigger history tracking, and a LWC to display and filter history records.**
+**This project contains the custom code for Field Change History functionality. This functionality will allow the user to track field changes, compare old values to new values and to filter on the change history by Object, Field Name and Change Date. The functionality has 3 main components: An invocable apex class that will create a new Field_Change_History__c record, a flow to trigger history tracking, and a LWC to display and filter history records.**
 &nbsp;   
 &nbsp;
 
@@ -58,4 +58,3 @@ Note: If this is not included, field history records will not be created, and th
  - Add a nightly schedled job to find all expired records and delete them. I would also add any records that do not fit the field list criteria anymore. 
 
 4. LWC Consideration: I debated 2 different approaches to the LWC and eventually built them both. For the datatable, do we fetch and display the filtered data from the server on every change, or do we have a subset of the most recent records and filter on the client side only. Thinking about the use case for a large number of records, I went with the server side retrieval. This would ensure that all History records are searchable and served up to the user. However I did build a "Client Side Only" version and happy to demo it.
-
